@@ -35,7 +35,7 @@ function FoodOptions() {
   ];
 
   const FoodCard = ({ image, name }: { image: string; name: string }) => (
-    <div className="card card-side bg-base-100 shadow-xl">
+    <div className="card card-side bg-base-100 shadow-xl group bg-white cursor-pointer">
       <figure>
         <div
           className="w-[30vw] bg-center bg-cover bg-no-repeat bg-red-200"
@@ -44,7 +44,7 @@ function FoodOptions() {
           }}
         ></div>
       </figure>
-      <div className="card-body">
+      <div className="card-body group-hover:bg-[#FF6624] group-hover:text-white">
         <h2 className="card-title">{name}</h2>
         <p>Click the button to watch on Jetflix app.</p>
       </div>

@@ -17,7 +17,7 @@ export default function Home() {
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
               excepturi exercitationem quasi.
             </p>
-            <button className="btn btn-primary">Read More</button>
+            <button className="btn bg-[#FF6624] border-[#FF6624] text-white hover:border-[#FF6624]">Read More</button>
           </div>
         </div>
       </div>
