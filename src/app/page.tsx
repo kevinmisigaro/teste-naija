@@ -1,5 +1,4 @@
 import FoodOptions from "@/components/FoodOptions";
-import Image from "next/image";
 
 export default function Home() {
   return (
