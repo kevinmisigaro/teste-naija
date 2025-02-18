@@ -1,6 +1,19 @@
-import React from "react";
+import { ReactNode } from "react";
+import {
+  FaPizzaSlice,
+  FaBook,
+  FaPencil,
+  FaClipboardList,
+} from "react-icons/fa6";
 
 function Navbar() {
+  
+  const NavOption = ({ name, icon }: { name: string; icon: ReactNode }) => (
+    <div className="flex flex-col gap-y-1 align-center">
+      {icon}
+      <a>{name}</a>
+    </div>
+  );
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -19,20 +32,6 @@ function Navbar() {
             <li>
               <a>Item 1</a>
             </li>
-            <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
           </ul>
         </div>
         <img
@@ -44,23 +43,16 @@ function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
+            <NavOption icon={<FaPizzaSlice />} name="Kitchen" />
           </li>
           <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
+            <NavOption icon={<FaClipboardList />} name="Teste" />
           </li>
           <li>
-            <a>Item 3</a>
+            <NavOption icon={<FaBook />} name="Recipies" />
+          </li>
+          <li>
+            <NavOption icon={<FaPencil />} name="Blog" />
           </li>
         </ul>
       </div>
