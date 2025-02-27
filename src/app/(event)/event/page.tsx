@@ -1,47 +1,8 @@
 "use client";
 
 function Page() {
-  const array = [
-    {
-      image:
-        "https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      name: "Enjoy all-inclusive  and varieties of Nigerian Cuisines",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      name: "Comedy",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      name: "Exclsuive Nigeria Music Playlist",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      name: "Stand a chance to win special items",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      name: "Exhibition & Networking",
-    },
-  ];
-
   const Dot = () => <span className="flex flex-column align-center justify-center">*</span>
-
-  const HighlightCard = ({ image, name }: { image: string; name: string }) => (
-    <div className="card bg-base-100 w-96 shadow-xl">
-      <figure>
-        <img src={image} alt="Shoes" />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">{name}</h2>
-      </div>
-    </div>
-  );
-
+  
   return (
     <div>
       <div
