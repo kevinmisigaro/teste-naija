@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ReactNode } from "react";
 import {
   FaPizzaSlice,
@@ -19,11 +20,13 @@ function Navbar() {
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <Link href={"/"} className="cursor-pointer">
             <img
               src="/assets/logo/logo-black.png"
               alt="logo"
               className="w-[7rem]"
             />
+            </Link>
           </div>
           <ul
             tabIndex={0}
@@ -34,11 +37,13 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <img
-          src="/assets/logo/logo-black.png"
-          alt="logo"
-          className="w-[4rem]"
-        />
+        <Link href={"/"} className="cursor-pointer">
+            <img
+              src="/assets/logo/logo-black.png"
+              alt="logo"
+              className="w-[4rem]"
+            />
+            </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
