@@ -1,8 +1,6 @@
 "use client";
 
 function Page() {
-  const Dot = () => <span className="flex flex-column align-center justify-center">*</span>
-
   return (
     <div>
       <div
