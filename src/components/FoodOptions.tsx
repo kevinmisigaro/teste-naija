@@ -44,7 +44,7 @@ function FoodOptions() {
           }}
         ></div>
       </figure>
-      <div className="card-body group-hover:bg-[#FF6624] group-hover:text-white">
+      <div className="card-body group-hover:bg-[#b40323] group-hover:text-white">
         <h2 className="card-title">{name}</h2>
         <p>Click the button to watch on Jetflix app.</p>
       </div>

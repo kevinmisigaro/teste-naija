@@ -2,7 +2,7 @@
 
 function Page() {
   const Dot = () => <span className="flex flex-column align-center justify-center">*</span>
-  
+
   return (
     <div>
       <div
@@ -15,7 +15,7 @@ function Page() {
         <div className="hero-content text-neutral-content text-center text-white">
           <div className="max-w-lg">
             <h1 className="mb-5 text-5xl font-black">
-              TasteNaija <span className="text-[#FF6624]">UNLOCKED</span> Event
+              TasteNaija <span className="text-[#b40323]">UNLOCKED</span> Event
             </h1>
             <p className="mb-5 text-2xl font-bold">
               21<sup>st</sup> March 2025
@@ -36,26 +36,17 @@ function Page() {
             Salaam.
           </p>
 
-          <p className="font-bold text-4xl text-[#FF6624] text-center my-10">
+          <p className="font-bold text-4xl text-[#fc0030] text-center my-10">
             Come hungry, leave inspired. Taste Nigeria like never before!
           </p>
         </div>
       </div>
 
-      <div className="px-5 py-10">
-        <h3 className="text-center font-bold text-4xl">
-          Highlights for the event
-        </h3>
-        <div className="mt-5">
-          <div className="text-center text-red-500 text-2xl font-bold">
-            NIGERIAN CUISINES <Dot /> COMEDY <Dot /> NIGERIAN
-            SOUNDS <Dot />
-            EXHIBITION & NETWORKING
-          </div>
-        </div>
+      <div className="px-5 -mt-28">
+      <img src="/assets/img/FEATURES-TASTE-NAIJAArtboard-1.png" className="-rotate-11" alt="..." />
       </div>
 
-      <div className="px-10 py-10">
+      <div className="px-10 -mt-28">
         <div className="grid grid-cols-2">
           
           <div className="flex justify-center">

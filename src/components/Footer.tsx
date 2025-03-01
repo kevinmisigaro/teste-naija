@@ -2,7 +2,9 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="footer bg-[#FF6624] text-white p-10">
+    <footer style={{
+      backgroundImage: "url('/assets/img/RIPPED-BG-TASTE-NAIJAArtboard-1.png')"
+    }} className="footer text-white px-10 bg-cover pt-40 pb-12">
       <aside>
         <img
           src="/assets/logo/logo-black.png"

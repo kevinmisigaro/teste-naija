@@ -21,7 +21,7 @@ export default function Home() {
               African experience delivered through Africa&apos;s finest food
               heritage
             </p>
-            <button className="btn bg-[#FF6624] border-[#FF6624] text-white hover:border-[#FF6624]">
+            <button className="btn bg-[#b40323] border-[#b40323] text-white hover:border-[#b40323]">
               Read More
             </button>
           </div>
@@ -32,7 +32,7 @@ export default function Home() {
           backgroundImage: "url('/assets/img/girls-happy.jpg')"
         }}></div>
         <div className="py-16 px-10 text-[#f5f8fd]">
-          <h3 className="font-bold text-5xl">TasteNaija <span className="text-[#FF6624]">UNLOCKED</span> Event</h3>
+          <h3 className="font-bold text-5xl">TasteNaija <span className="text-[#b40323]">UNLOCKED</span> Event</h3>
           <h4 className="font-bold text-3xl mt-6">
             TasteNaija Unlocked: A Feast of Flavors You&apos;ll Never Forget!
           </h4>
@@ -43,7 +43,7 @@ export default function Home() {
             most beloved dishes, all in one unforgettable event.
           </p>
 
-          <a href="/event" className="btn btn-outline btn-warning mt-6 hover:bg-[#FF6624]">Read more</a>
+          <a href="/event" className="btn btn-outline btn-warning mt-6 hover:bg-[#b40323]">Read more</a>
         </div>
       </div>
 
