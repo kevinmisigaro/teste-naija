@@ -5,13 +5,17 @@ export default function Home() {
     title,
     desc,
     bg,
+    classOpt,
   }: {
     title: string;
     desc: string;
     bg: string;
+    classOpt?: string;
   }) => (
     <div
-      className={`bg-[${bg}] text-${bg == "#b40323" ? "white" : "black"} p-10`}
+      className={`bg-[${bg}] ${classOpt} text-${
+        bg == "#b40323" ? "white" : "black"
+      } p-10`}
     >
       <h3 className="font-bold text-xl mb-4">{title}</h3>
       <p className="text-justify">{desc}</p>
@@ -80,11 +84,13 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <CuriosityOption
             bg="#b40323"
+            classOpt="order-2 md:order-1"
             title="Order from our top Menu"
             desc="Select from our well curated menu to satisfy your cravings. We prepare your meal just the way and size you want it. Good news! For every meal you order, you receive TasteNaija points. You can redeem these points after 10 meals ordered from TasteNaija. You can redeem the points by getting free meal or gift voucher or shopping voucher, or even sharing meal with the less privilage."
           />
           <CuriosityOption
             bg="white"
+            classOpt="order-1 md:order-2"
             title="Family Experience"
             desc="You want home service? And we have it! Through our pre-booked home
 service experience, you have the luxury of having our Chef cook for your family right at your
@@ -94,6 +100,7 @@ your order and meal preferrence."
           <CuriosityOption
             title="Nigeria Food Stuff for Delivery:"
             bg="white"
+            classOpt="order-3"
             desc="You are the type that wants to put your hands to work and
   make your own Nigeria meals? We got you covered with the best and quality food stuffs
   from Nigeria. You order, we package and deliver food stuff to your doorstep across
@@ -101,6 +108,7 @@ your order and meal preferrence."
           />
           <CuriosityOption
             bg="#b40323"
+            classOpt="order-4"
             title="Event Catering"
             desc="Add a touch of Nigeria flavour to your event. With our tailor-made catering
 services, we provide the best and mouthwatering Nigeria food options to light up your
@@ -111,14 +119,15 @@ leave a lasting legacy for your event."
       </div>
 
       <div className="px-5 md:px-20 py-10 md:py-20">
-      <h3 className="font-bold text-2xl md:text-3xl text-center mb-5">
-      Reviews
+        <h3 className="font-bold text-2xl md:text-3xl text-center mb-5">
+          Reviews
         </h3>
         <p>
-        We want to constantly imrpove our services and quality of food we serve our most
-cherished customers. If you have any feedback that will help us serve you better, please use
-this form to provide your reviews. We welcome positive and constructive reviews to help us
-serve you better.
+          We want to constantly imrpove our services and quality of food we
+          serve our most cherished customers. If you have any feedback that will
+          help us serve you better, please use this form to provide your
+          reviews. We welcome positive and constructive reviews to help us serve
+          you better.
         </p>
       </div>
     </div>
