@@ -1,5 +1,9 @@
 "use client";
 
+import ContactForm from "@/components/ContactForm";
+import { FaMailBulk, FaPhoneAlt } from "react-icons/fa";
+import { FaLocationPin } from "react-icons/fa6";
+
 export default function Home() {
   const CuriosityOption = ({
     title,
@@ -129,6 +133,39 @@ leave a lasting legacy for your event."
           reviews. We welcome positive and constructive reviews to help us serve
           you better.
         </p>
+      </div>
+
+      <div className="px-5 md:px-10 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-lg">
+              Authentic Naija flavours on your plate in Tz. 🇹🇿🇳🇬
+Bringing people together through food, culture & unity.
+Handcrafted Nigerian delicacies.
+                </p>
+
+                <div className="flex flex-col gap-y-5 mt-10">
+                <div className="flex items-center space-x-2">
+                <FaLocationPin className="text-[#b40323] text-2xl" />
+        <span className="text-lg text-gray-700">
+        206 Mwai Kibaki Road, Kawe Beach, Dar es Salaam, Tanzania
+        </span>
+      </div>
+
+      <div className="flex items-center space-x-2">
+       <FaMailBulk className="text-[#b40323] text-2xl" />
+        <span className="text-lg text-gray-700">hello@tastenaija.co</span>
+      </div>
+
+      <div className="flex items-center space-x-2">
+        <FaPhoneAlt className="text-[#b40323] text-2xl" />
+        <span className="text-lg text-gray-700">+255742949268</span>
+      </div>
+
+                </div>
+            </div>
+            <div>
+            <ContactForm />
+            </div>
       </div>
     </div>
   );
