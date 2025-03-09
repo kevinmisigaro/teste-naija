@@ -65,8 +65,8 @@ function Page() {
         </div>
       </div>
 
-      <div className="px-5 md:px-10 py-10">
-        <h3 className="font-bold mb-3">Steps to pay:</h3>
+      <div className="px-5 md:px-28 py-10">
+      <h3 className="font-bold mb-3 text-xl">Steps to pay:</h3>
         <ul className="list-disc list-inside mb-6">
           <li>Pay to MPESA Lipa Number</li>
           <li>Name: Farm Boksi</li>

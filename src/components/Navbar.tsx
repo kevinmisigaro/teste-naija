@@ -6,7 +6,7 @@ function Navbar() {
     <div className="navbar bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
             <Link href={"/"} className="cursor-pointer">
             <img
               src="/assets/logo/logo-black.png"
@@ -24,7 +24,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <Link href={"/"} className="cursor-pointer">
+        <Link href={"/"} className="cursor-pointe hidden md:block">
             <img
               src="/assets/logo/logo-black.png"
               alt="logo"
