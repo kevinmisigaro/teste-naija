@@ -1,14 +1,7 @@
 import Link from "next/link";
-import { ReactNode } from "react";
 
 function Navbar() {
-  
-  const NavOption = ({ name, icon }: { name: string; icon: ReactNode }) => (
-    <div className="flex flex-col gap-y-1 align-center">
-      {icon}
-      <a>{name}</a>
-    </div>
-  );
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -41,8 +34,8 @@ function Navbar() {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-        <li><a href="/" className="text-[#b40323] font-bold">Home</a></li>
-        <li><a href="/event" className="text-[#b40323] font-bold">Event</a></li>
+        <li><Link href="/" className="text-[#b40323] font-bold">Home</Link></li>
+        <li><Link href="/event" className="text-[#b40323] font-bold">Event</Link></li>
         </ul>
       </div>
       <div className="navbar-end">
