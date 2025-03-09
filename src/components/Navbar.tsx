@@ -47,22 +47,12 @@ function Navbar() {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <NavOption icon={<FaPizzaSlice />} name="Kitchen" />
-          </li>
-          <li>
-            <NavOption icon={<FaClipboardList />} name="Teste" />
-          </li>
-          <li>
-            <NavOption icon={<FaBook />} name="Recipies" />
-          </li>
-          <li>
-            <NavOption icon={<FaPencil />} name="Blog" />
-          </li>
+        <li><a href="/" className="text-[#b40323] font-bold">Home</a></li>
+        <li><a href="/event" className="text-[#b40323] font-bold">Event</a></li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-[#FF6624] border-[#FF6624] text-white hover:border-[#FF6624] hover:text-[#FF6624]">
+        <a className="btn bg-[#b40323] border-[#b40323] text-white hover:border-[#b40323] hover:text-[#b40323]">
           Call Us
         </a>
       </div>

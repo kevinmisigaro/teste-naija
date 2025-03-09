@@ -1,6 +1,11 @@
-import React from "react";
+"use client"
+
+import { useRouter } from "next/navigation";
 
 function Footer() {
+
+  const router = useRouter()
+
   return (
     <footer style={{
       backgroundImage: "url('/assets/img/RIPPED-BG-TASTE-NAIJAArtboard-1.png')"
@@ -11,14 +16,14 @@ function Footer() {
           alt="logo"
           className="w-[7rem]"
         />
-        <p className="text-medium">Providing reliable tech since 1992</p>
+        <p className="text-medium">A Feast of Flavors You&apos;ll Never Forget!</p>
       </aside>
       <nav>
-        <h6 className="footer-title">Home</h6>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
+        <h6 className="footer-title" onClick={() => router.push("/")}>Home</h6>
+        <a className="link link-hover" href="/event">Event</a>
+        {/* <a className="link link-hover">Design</a>
         <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
+        <a className="link link-hover">Advertisement</a> */}
       </nav>
 
       <nav>

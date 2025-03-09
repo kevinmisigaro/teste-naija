@@ -2,7 +2,7 @@
 
 function Page() {
   return (
-    <div>
+    <div className="">
       <div
         className="hero min-h-[60vh]"
         style={{
@@ -40,38 +40,32 @@ function Page() {
         </div>
       </div>
 
-      <div className="px-5 -mt-28">
-      <img src="/assets/img/FEATURES-TASTE-NAIJAArtboard-1.png" className="-rotate-11" alt="..." />
+      <div>
+      <h3 className="text-center font-bold text-3xl mb-6">Some highlights of the event:</h3>
       </div>
 
-      <div className="px-10 -mt-28">
-        <div className="grid grid-cols-2">
-          
-          <div className="flex justify-center">
-            <div className="card bg-base-100 w-96 shadow-xl p-20">
-              <div className="text-red-700 font-bold text-4xl">
-                50,000 TZS
-              </div>
-              <div className="card-body">
-                <h2 className="card-title">Single Ticket</h2>
-              </div>
-            </div>
-          </div>
+      <div className="px-5 flex justify-center">
+        <img
+          src="/assets/img/Taste-Naija-Features.png"
+          style={{
+            transform: "rotate(-0.5deg)",
+          }}
+          alt="..."
+        />
+      </div>
 
+      <div className="px-5 md:px-10 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex justify-center">
-            <div className="card bg-base-100 w-96 shadow-xl p-20">
-              <div className="text-red-700 font-bold text-4xl">
-                90,000 TZS
-              </div>
-              <div className="card-body">
-                <h2 className="card-title">Double Ticket</h2>
-              </div>
-            </div>
+            <img src="/assets/img/50k-Taste-Naija.png" alt="50k" />
+          </div>
+          <div className="flex justify-center">
+            <img src="/assets/img/90k-Taste-Naija.png" alt="90k" />
           </div>
         </div>
       </div>
 
-      <div className="px-10 py-10">
+      <div className="px-5 md:px-10 py-10">
         <h3 className="font-bold mb-3">Steps to pay:</h3>
         <ul className="list-disc list-inside mb-6">
           <li>Pay to MPESA Lipa Number</li>
