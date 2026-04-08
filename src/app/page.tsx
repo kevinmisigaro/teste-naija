@@ -158,7 +158,7 @@ Handcrafted Nigerian delicacies.
 
       <div className="flex items-center space-x-2">
         <FaPhoneAlt className="text-[#b40323] text-2xl" />
-        <span className="text-lg text-gray-700">+255742949268</span>
+        <span className="text-lg text-gray-700">+255792181225</span>
       </div>
 
                 </div>
